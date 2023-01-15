@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --Dark_cyan: hsl(185, 75%, 39%);
+  --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --Dark_grayish_blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%) ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--Dark_cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*estilo para la tarjeta*/
+.card {
+  background-color: white;
+  width: 327px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  /*estilos para la imagen del perfil*/
+  /*estilos para centrar el perfil*/
+}
+.card-header {
+  width: 100%;
+  display: block;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+  /*estilos para la imagen del perfil*/
+  /*Estilo para el titulo del nombre de perfil*/
+}
+.card-body-img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin-top: -53px;
+  background-color: white;
+}
+.card-body-title {
+  margin-top: 1.125rem;
+  font-size: 1.125em;
+}
+.card-body-title span {
+  color: var(--Dark-gray);
+  font-weight: 400;
+  margin-left: 0.26rem;
+}
+.card-body-text {
+  color: var(--Dark-gray);
+  font-size: 1em;
+  margin-top: 0.6rem;
+  margin-bottom: 2em;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-footer-social {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.card-footer-social h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.card-footer-social p {
+  color: var(--Dark-gray);
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  margin-top: 0.5rem;
+}/*# sourceMappingURL=estilos.css.map */
